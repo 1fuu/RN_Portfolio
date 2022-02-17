@@ -1,11 +1,17 @@
+import {HOME_SCREEN} from '@/constants/constants.screen';
 import React from 'react';
 import styled from 'styled-components/native';
 import {ILogin} from './Login.interface';
 
-const Login: React.FC<ILogin.IProps> = () => {
+const Login: React.FC<ILogin.IProps> = ({navigation}) => {
+  const goHome = () => {
+    navigation.navigate(HOME_SCREEN);
+  };
   return (
     <ContainerStyle>
-      <TextStyle>Login</TextStyle>
+      <LoginCotainer onPress={goHome}>
+        <TextStyle>Login</TextStyle>
+      </LoginCotainer>
     </ContainerStyle>
   );
 };
@@ -13,6 +19,8 @@ const Login: React.FC<ILogin.IProps> = () => {
 const ContainerStyle = styled.View`
   flex: 1;
 `;
+
+const LoginCotainer = styled.TouchableOpacity``;
 
 const TextStyle = styled.Text``;
 

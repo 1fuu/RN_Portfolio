@@ -1,3 +1,5 @@
 export namespace IHome {
-  export interface IProps {}
+  export interface IProps {
+    navigation: any;
+  }
 }

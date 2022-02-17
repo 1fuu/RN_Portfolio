@@ -1,3 +1,5 @@
 export namespace ILogin {
-  export interface IProps {}
+  export interface IProps {
+    navigation: any;
+  }
 }
