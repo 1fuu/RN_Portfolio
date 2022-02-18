@@ -63,3 +63,6 @@ buck-out/
 # local env files
 .env.*
 !.env.example
+
+# env
+.env*
