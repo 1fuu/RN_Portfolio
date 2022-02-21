@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import {ITab1} from './Tab1.interface';
-import User1 from '@/domains/User/components/User1';
+import {ITab3} from './Tab3.interface';
+import {User3} from '@/domains/User/components';
 
-const Tab1: React.FC<ITab1.IProps> = () => {
+const Tab3: React.FC<ITab3.IProps> = () => {
   return (
     <ContainerStyle>
-      <User1 />
+      <User3 />
     </ContainerStyle>
   );
 };
@@ -19,4 +19,4 @@ const TextStyle = styled.Text`
   color: ${({theme}) => theme.colors.red};
 `;
 
-export default Tab1;
+export default Tab3;

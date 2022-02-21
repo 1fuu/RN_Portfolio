@@ -1,3 +1,6 @@
 export namespace IButton {
-  export interface IProps {}
+  export interface IProps {
+    title: string,
+    onPress: any
+  }
 }
